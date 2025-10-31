@@ -38,26 +38,26 @@ git clone https://github.com/<tu-usuario>/Masterchef.git
 cd Masterchef
 ```
 
-### 🧱 Construir el proyecto
+### Construir el proyecto
 
 ```bash
 mvn clean install
 ```
 
-### ▶️ Ejecutar la aplicación
+### Ejecutar la aplicación
 
 ```bash
 mvn spring-boot:run
 ```
 
-### 🌐 Acceso local
+### Acceso local
 
 Una vez iniciada, la API estará disponible en:
 `http://localhost:8082/swagger-ui/index.html`
 
 ---
 
-## 🧪 Ejemplos de Request y Response por Endpoint
+## Ejemplos de Request y Response por Endpoint
 
 ### Crear una receta
 
@@ -122,12 +122,12 @@ Una vez iniciada, la API estará disponible en:
 
 ## Enlace al Swagger UI publicado en Azure
 
-🔗 **Swagger UI:**
+**Swagger UI:**
 [https://masterchef-dosw-aue5f3d4gegwhgdv.canadacentral-01.azurewebsites.net/swagger-ui/index.html](https://masterchef-dosw-aue5f3d4gegwhgdv.canadacentral-01.azurewebsites.net/swagger-ui/index.html)
 
 ---
 
-## 🔄 CI/CD con GitHub Actions
+## CI/CD con GitHub Actions
 
 El flujo de integración y despliegue continuo realiza:
 
