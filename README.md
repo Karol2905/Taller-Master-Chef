@@ -136,6 +136,3 @@ El flujo de integración y despliegue continuo realiza:
 
 Archivo de workflow: `.github/workflows/ci-cd.yml`
 
----
-
-¿Quieres que te lo formatee con emojis y estilo visual (por ejemplo, para que se vea más atractivo en GitHub con tablas y color en bloques de código)?
