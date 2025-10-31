@@ -1,12 +1,11 @@
-name: Build and Deploy Masterchef API
+name: Build and Deploy to Azure Web App
 
 on:
   push:
     branches:
       - main
-  pull_request:
-    branches:
-      - develop
+    # Opcional: también puedes probar con develop si quieres CI ahí
+    # - develop
 
 jobs:
   build-and-deploy:
@@ -14,24 +13,21 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v3
 
-      - name: Set up JDK 17
-        uses: actions/setup-java@v4
+      - name: Set up Java 17
+        uses: actions/setup-java@v3
         with:
-          java-version: '17'
           distribution: 'temurin'
+          java-version: '17'
 
       - name: Build with Maven
+        working-directory: Masterchef
         run: mvn clean package -DskipTests=false
-
-      - name: Run tests
-        run: mvn test
 
       - name: Deploy to Azure Web App
         uses: azure/webapps-deploy@v2
         with:
-          app-name: masterchef-api
+          app-name: masterchef-dosw
           publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
-          package: target/*.jar
-
+          package: Masterchef/target/*.jar
