@@ -125,6 +125,10 @@ Una vez iniciada, la API estará disponible en:
 **Swagger UI:**
 [https://masterchef-dosw-aue5f3d4gegwhgdv.canadacentral-01.azurewebsites.net/swagger-ui/index.html](https://masterchef-dosw-aue5f3d4gegwhgdv.canadacentral-01.azurewebsites.net/swagger-ui/index.html)
 
+**Evidencias:**
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/de580e3f-a912-4ec1-8fc8-d0e2e086cc27" />
+
+
 ---
 
 ## CI/CD con GitHub Actions
